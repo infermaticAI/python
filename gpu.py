@@ -54,8 +54,7 @@ try:
             gpu_num_and_name = core_out_line[0].split(']')
             gpu_temp_and_load = core_out_line[1].split(',')
             gpu_memory = core_out_line[2].replace(' ','')
-            gpu_proc = "".join(core_out_line[3:]).strip().replace(' ', 
-',')
+            gpu_proc = "".join(core_out_line[3:]).strip().replace(' ', ',')
 
             gpu_num = gpu_num_and_name[0].replace('[','').strip()
             gpu_name = gpu_num_and_name[1].strip()
